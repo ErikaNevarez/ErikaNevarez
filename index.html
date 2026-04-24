@@ -216,11 +216,21 @@
         border: 2px solid var(--border-color);
         background: transparent;
         color: var(--text-primary);
-        border-radius: 6px;
+        border-radius: 8px;
         text-decoration: none;
         transition: all 0.3s ease;
         font-weight: 600;
         cursor: pointer;
+      }
+
+      .social-buttons a img {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.3s ease;      
       }
 
       .social-btn:hover {
@@ -228,6 +238,8 @@
         color: var(--accent-mauve);
         background: rgba(184, 146, 162, 0.1);
       }
+
+      
 
       /* Section Styles */
       section {
@@ -462,14 +474,12 @@
         margin-bottom: 2rem;
       }
 
-      .footer-social a img{
-        width: 40px;
-        height: 40px;
+      .footer-social a img {
+        max-width: 40px;
+        max-height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid var(--border-color);
-        border-radius: 50%;
         color: var(--text-primary);
         text-decoration: none;
         transition: all 0.3s ease;
@@ -575,13 +585,16 @@
           
           <div class="social-buttons">
             <a href="https://www.linkedin.com/in/erika-nevárez-martínez" target="_blank" class="social-btn">
-              🔗 LinkedIn
+              <img src="/images/icons8-linkedin-48.png" alt="">
+                LinkedIn
             </a>
             <a href="https://github.com/ErikaNevarez" target="_blank" class="social-btn">
-              🐙 GitHub
+              <img src="/images/icons8-github-80.png" alt="">
+                GitHub
             </a>
             <a href="mailto:ekinemas@gmail.com" class="social-btn">
-              ✉️ Email
+              <img src="/images/icons8-gmail-logo-48.png" alt="">
+                Email
             </a>
           </div>
         </div>
@@ -757,7 +770,7 @@
       <div class="footer-bottom">
         <p>&copy; 2026 Erika Nevárez Martínez • Aguascalientes, México</p>
       </div>
-     
+  
     </footer>
   
   </body>
